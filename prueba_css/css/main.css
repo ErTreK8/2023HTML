@@ -1,0 +1,49 @@
+*
+{
+    margin: 0px;
+    padding: 0px!important;
+}
+p
+{
+    color: rgb(44, 2, 255, 1);
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+#caixa1,#caixa2{
+    height: 1em;
+}
+
+#p1{color: rgb(255, 0, 0);}
+
+.ok{color: rgb(0, 255, 0);}   
+
+.test{border: 5px inset red;}
+
+#Hola{
+    height: 80vh;
+    background-attachment: fixed;
+    background-image: url(../img/fernando-alonso-renault.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#Hola2{
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#prueba{
+    height: 5%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    border: 0.3em solid;
+    border-color: black;
+    border-radius: 0.5em;
+}
+#prueba:hover{
+    background-color: red;
+}

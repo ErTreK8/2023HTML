@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-direction: row-reverse
+}
+
+ul {
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    justify-content: center;
+    float: right;
+    display: block;
+}
+li > a{
+    text-decoration: none;
+    color: black;
+    transition: background-color 1s color 1s;
+}
+
+
+li{
+    justify-content: center;
+    float: right;
+    margin: 1em;
+    font-weight: bold;
+}
+/*
+    Declarem variables de color;
+*/
+:root{
+    --separador: #eaeaea;
+    --resaltatProjectes: lightskyblue;
+    --resaltatMenu: crimson;
+    --text: black;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 16vh;
+}
+#logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logo > img{
+    width: 80%;
+    min-height: 4vh;
+    padding-left: 1em;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.caixa{
+    text-align: center;
+    margin: 1em;
+}
+div > img{
+    width: 100%;
+}
+
+.caixa > img{
+    width: 60%;
+    max-height: 70vh;
+}
+footer {
+    text-align: center;
+}
+footer > p{
+    margin: 1em;
+}
+
+[class*="col-"]{float: left;}
+
+/* Extra small devices (phones, 575px and down) */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 637px){
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+    #logo{
+        width: 20%;
+        align-items: center;
+    }
+    #logo > img{
+        width: 100%;
+        min-height: 4vh;
+        padding-left: 1em;
+    }
+    nav{
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        width: 80%;
+    }
+    .caixa{
+        float: left;
+        width: 44%;
+    }
+    .caixa > img{
+        width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+    .caixa{
+        float: left;
+        width: 29%;
+    }
+    .final{
+        justify-content: center;
+    }
+    #grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+    .caixa{
+        float: left;
+        width: 21%;
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+  .col-xl-1 {width: 8.33%;}
+  .col-xl-2 {width: 16.66%;}
+  .col-xl-3 {width: 25%;}
+  .col-xl-4 {width: 33.33%;}
+  .col-xl-5 {width: 41.66%;}
+  .col-xl-6 {width: 50%;}
+  .col-xl-7 {width: 58.33%;}
+  .col-xl-8 {width: 66.66%;}
+  .col-xl-9 {width: 75%;}
+  .col-xl-10 {width: 83.33%;}
+  .col-xl-11 {width: 91.66%;}
+  .col-xl-12 {width: 100%;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1400px){
+    .col-xxl-1 {width: 8.33%;}
+    .col-xxl-2 {width: 16.66%;}
+    .col-xxl-3 {width: 25%;}
+    .col-xxl-4 {width: 33.33%;}
+    .col-xxl-5 {width: 41.66%;}
+    .col-xxl-6 {width: 50%;}
+    .col-xxl-7 {width: 58.33%;}
+    .col-xxl-8 {width: 66.66%;}
+    .col-xxl-9 {width: 75%;}
+    .col-xxl-10 {width: 83.33%;}
+    .col-xxl-11 {width: 91.66%;}
+    .col-xxl-12 {width: 100%;}
+}

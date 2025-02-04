@@ -1,0 +1,13 @@
+:root{
+    --colorPrimari: #FF9F59;
+    --colorSecundari: #000;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--colorSecundari);
+}
+
+/* The party begins here ... */

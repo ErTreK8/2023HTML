@@ -1,0 +1,315 @@
+:root{
+    --colorPrimari: #FF9F59;
+    --colorSecundari: #000;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--colorSecundari);
+}
+
+/* The party begins here ... */
+
+ul {
+    display: none;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    justify-content: center;
+    float: right;
+}
+
+li{
+    justify-content: center;
+    float: right;
+    margin: 1em;
+    font-weight: bold;
+}
+li > a{
+    text-decoration: none;
+    color: black;
+    transition: background-color 1s color 1s;
+}
+header{
+    background-color: var(--colorPrimari);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    flex-wrap: wrap;
+    float: left;
+    top: 0;
+}
+
+#OfficialLogoBox{
+    margin-left: 1em;
+    width: 10%;
+    display: block;
+    float: left;
+}
+.logos + a {
+    width: 65%;
+    float: right;
+    display: flex;
+    justify-content: right;
+}
+#OfficialLogo{
+    width: 100%;
+    height: 10vh;
+}
+
+#SignInLogo1{
+    width: 10%;
+    height: 8vh;    
+}
+
+nav{
+    background-image: url(../img/menu/menu-hamburger.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 5%;
+    height: 8vh;
+    display: block;
+    margin: 1em;
+}
+
+#SignInLogo2{
+    display: none;
+}
+
+body{
+    background-image: url(../img/backgrounds/mobile-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+main{
+    width: 100%;
+}   
+#Galery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+#link {
+    display: flex;
+}
+.box{
+    margin: 1em;
+    width: 80%;
+    padding: 1em;
+    transition: background-color 0.5s;
+}
+.box:hover{
+    background-color: var(--colorPrimari);
+}
+.box:hover h2{
+    color: black;
+}
+
+.box>h2{
+    color: var(--colorPrimari);
+    transition: color 0.5s;
+}
+
+.box>h3{
+    color: var(--colorPrimari);
+}
+.box:hover h3{
+    color: black;
+    transition: color 0.5s;
+
+}
+.box > img{
+    width: 80%;
+}
+.box > button{
+    background-color: var(--colorPrimari);
+    color: black;
+    text-align: center;
+    padding: 0.3em;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#Title{
+    width: 100%;
+    display: flex;
+    height: 10vh;
+    margin-top: 7em;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#Title>h1{
+    color: var(--colorPrimari);
+    width: 100%;
+}
+#Title>h2{
+    color: var(--colorPrimari);
+}
+
+footer > p{
+    margin: 1em;
+    color: var(--colorPrimari);
+}
+
+[class*="col-"]{float: left;}
+
+/* Extra small devices (phones, 575px and down) */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px){
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+    .box{
+        width: 43%;
+        flex-wrap: wrap;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+    .box{
+        width: 28%;
+        flex-wrap: wrap;
+    }
+}
+
+/* Large devices (laptops/desktops, 1028px and up) */
+@media only screen and (min-width: 1028px) {
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+    ul{
+        display: block;
+        justify-content: center;
+        margin-top: 0.4em;
+    }
+    nav{
+        background-image: none;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+    #SignInLogo1{
+        display: none;
+    }
+    #SignInText{
+        margin-left: 3em;
+    }
+    #SignInLogo2{
+        display: block;
+        float: right;
+        margin-left: 0.3em;
+        height: 2vh;
+    }
+    header{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    #OfficialLogoBox{
+    width: 10%;
+    }
+    .logos + a {
+        display: none;
+    }
+    body{
+        background-image: url(../img/backgrounds/main-bg.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .box{
+        width: 21%;
+        flex-wrap: wrap;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+  .col-xl-1 {width: 8.33%;}
+  .col-xl-2 {width: 16.66%;}
+  .col-xl-3 {width: 25%;}
+  .col-xl-4 {width: 33.33%;}
+  .col-xl-5 {width: 41.66%;}
+  .col-xl-6 {width: 50%;}
+  .col-xl-7 {width: 58.33%;}
+  .col-xl-8 {width: 66.66%;}
+  .col-xl-9 {width: 75%;}
+  .col-xl-10 {width: 83.33%;}
+  .col-xl-11 {width: 91.66%;}
+  .col-xl-12 {width: 100%;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1400px){
+    .col-xxl-1 {width: 8.33%;}
+    .col-xxl-2 {width: 16.66%;}
+    .col-xxl-3 {width: 25%;}
+    .col-xxl-4 {width: 33.33%;}
+    .col-xxl-5 {width: 41.66%;}
+    .col-xxl-6 {width: 50%;}
+    .col-xxl-7 {width: 58.33%;}
+    .col-xxl-8 {width: 66.66%;}
+    .col-xxl-9 {width: 75%;}
+    .col-xxl-10 {width: 83.33%;}
+    .col-xxl-11 {width: 91.66%;}
+    .col-xxl-12 {width: 100%;}
+}
